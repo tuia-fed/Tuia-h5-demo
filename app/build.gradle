@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     buildToolsVersion "28.0.3"
     defaultConfig {
-        applicationId "com.tm.demo"
+        applicationId "com.tm.demo.q"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
@@ -42,9 +42,9 @@ android {
         }
 
         debug {
-            minifyEnabled true
-            zipAlignEnabled true
-            shrinkResources true
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             debuggable true
             signingConfig signingConfigs.debug
@@ -59,7 +59,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation ('com.tm:tm:1.0.0.0'){
-        transitive = true
-    }
+
+    compile 'com.liulishuo.filedownloader:library:1.7.5'
 }

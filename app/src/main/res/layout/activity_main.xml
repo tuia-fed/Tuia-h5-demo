@@ -6,8 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     <Button
-        android:text="激励视频点击"
+        android:text="前端发奖测试"
         android:id="@+id/btn_video"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
