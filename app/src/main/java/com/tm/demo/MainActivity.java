@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final WebView webView = findViewById(R.id.web);
         initWeb(webView);
+
         findViewById(R.id.btn_video).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
